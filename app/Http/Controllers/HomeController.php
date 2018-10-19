@@ -30,7 +30,6 @@ class HomeController extends Controller
 
     public function profile()
     {
-
         $users=User::all();
 
         return view('profile', ['users' => $users]);
