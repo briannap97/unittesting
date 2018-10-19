@@ -14,7 +14,10 @@
                         </div>
                     @endif
 
-                    Your About Page {{$myvariable}}
+                    Your About Page
+                        @foreach ($users as $user)
+                            <p>This is user {{ $user->name }}</p>
+                        @endforeach
                 </div>
             </div>
         </div>
